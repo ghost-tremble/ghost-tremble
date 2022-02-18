@@ -1,0 +1,39 @@
+.footer {
+  display: flex;
+}
+
+.footer-container {
+  display: flex;
+
+  flex-direction: row;
+  border: 1px solid transparent;
+  border-top: 1px solid #eef;
+  margin: 40px;
+  padding: 20px;
+}
+
+.footer-icons {
+  display: flex;
+  margin-left: auto;
+}
+.footer-icons ul li {
+  display: inline;
+  padding: 10px;
+}
+.name h2 {
+  color: var(prcolor);
+}
+.socials {
+  margin-left: auto;
+}
+
+@media screen and (max-width: 760px) {
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .socials {
+    margin-left: 0;
+  }
+}

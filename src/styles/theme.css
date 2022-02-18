@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&display=swap");
+:root {
+  --prcolor: #fff;
+  --bgcolor: rgb(0, 0, 0);
+  --secolor: rgb(17, 17, 17);
+  --bx-shadow: 0px 0px 20px rgba(90, 218, 235, 0.5);
+  --font: "Open Sans", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+blockquote {
+  font-family: var(--font);
+  font-weight: 700;
+}
+
+p {
+  font-family: var(--font);
+}
+
+span div {
+  font-family: var(--font);
+}
+
+.hire {
+  border: 0.5px solid rgb(255, 255, 255);
+  padding: 4px 1rem;
+  font-family: var(--bold);
+  font-weight: 500;
+  width: max-content;
+  background-color: var(--secolor);
+}

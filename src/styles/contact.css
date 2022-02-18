@@ -1,0 +1,128 @@
+form {
+  width: 90%;
+}
+
+.form {
+  height: max-content;
+  justify-content: center;
+  align-items: center;
+}
+form > div {
+  position: relative;
+}
+
+form label {
+  position: absolute;
+  opacity: 0.6;
+  font-size: 1.25rem;
+  left: 1rem;
+  pointer-events: none;
+  color: #ffffff;
+  transition: all 0.22s;
+  top: 50%;
+  transform: translateY(-50%);
+  display: block;
+}
+
+form input {
+  width: 100%;
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+  margin: 1.5rem 0;
+  border: 1px solid rgb(112, 162, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+}
+textarea {
+  width: 100%;
+  padding: 1rem;
+  background: rgb(0, 0, 0);
+  margin: 1.5rem 0;
+  border: 1px solid rgb(112, 162, 255);
+  color: rgb(255, 255, 255);
+  font-size: 1.125rem;
+  height: 170px;
+  resize: none;
+}
+textarea:focus {
+  outline: none;
+}
+
+textarea::placeholder {
+  color: rgb(255, 255, 255);
+}
+
+form input:focus {
+  outline: 0;
+}
+
+form input:focus + label,
+form input:hover + label,
+form input:valid + label {
+  top: 0;
+  font-size: 1.125rem;
+  transform: translateY(0);
+  left: 0;
+  opacity: 1;
+}
+
+form .cover {
+  width: 100%;
+  position: absolute;
+  height: 4px;
+  top: 1.25rem;
+}
+
+.contact-list ul {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-list ul li {
+  margin: auto;
+
+  padding: 0.7rem;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.5s;
+}
+.contact-list ul li:hover {
+  background-color: rgb(112, 162, 255);
+}
+
+.content {
+  padding: 10px;
+}
+
+/* gsap */
+
+.circle {
+  width: 55px;
+  height: 55px;
+  border-radius: 100%;
+  background-color: rosybrown;
+  margin-bottom: 10px;
+}
+
+.red {
+  background-color: royalblue;
+}
+
+.green {
+  background-color: salmon;
+}
+
+.circle-container {
+  border: 1px solid red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}

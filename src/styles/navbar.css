@@ -1,0 +1,41 @@
+.navbar {
+  display: flex;
+  margin-top: 30px;
+  padding: 15px;
+  justify-content: center;
+  align-items: center;
+}
+.nav-header {
+  padding: 3px;
+  font-family: var(--font);
+  font-size: large;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-header h3 {
+  margin-right: auto;
+}
+.nav-list {
+  margin-left: auto;
+  display: flex;
+}
+
+.navbar ul li {
+  display: inline;
+}
+.navbar ul li a {
+  padding: 15px;
+
+  font-size: medium;
+  font-family: var(--font);
+  font-weight: 300;
+}
+.navbar ul li a:hover {
+  color: rgb(71, 120, 255);
+}
+.nav-list div {
+  border: 1px solid red;
+  width: 100%;
+  text-align: center;
+}
