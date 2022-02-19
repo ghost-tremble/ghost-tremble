@@ -18,12 +18,15 @@ const Modal = ({ isModalOpen, setIsModalOpen, modalData }) => {
         <div
           className="content-modal container"
           style={{
-            backgroundImage: `url(${modalData})`,
+            backgroundImage: `url(${modalData.preview})`,
           }}>
+          
+  
+            
           <div className="row modal-prev">
             <div className="col-sm-12 ">
-              <a href="/">Visit</a>
-              <a href="/">github</a>
+              <span onClick={()=>window.open(modalData.url, "_blank")}>Visit</span>
+              <span onClick={()=>window.open(modalData.repos, "_blank")}>github</span>
             </div>
           </div>
         </div>

@@ -44,9 +44,11 @@
   padding: 15px;
   cursor: pointer;
   transition: 0.4s;
+  color: rgb(74, 74, 247);
 }
 .cancel-modal:hover {
   transform: rotate(145deg);
+  color: rgb(56, 68, 238);
 }
 .modal-con {
   font-size: 0.7rem;
@@ -60,6 +62,10 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   font-size: smaller;
+  background-repeat: no-repeat;
+
+  background-size: 100% 100%;
+  background-position: center;
 }
 .content-modal ul {
   font-size: 20px;
@@ -75,22 +81,24 @@
   justify-content: right;
   text-align: right;
 }
-.modal-prev a {
-  color: var(--text-primary);
+.modal-prev span {
+  color: rgb(20, 20, 128);
   text-decoration: none;
   font-size: 1.4rem;
   padding: 1rem;
   font-family: var(--font-main);
   transition: 0.3s;
+  cursor: pointer;
+  font-weight: 700;
 
   display: inline-block;
 }
-.modal-prev a:hover {
+.modal-prev span:hover {
   color: var(--text-secondary);
 }
 
 @media screen and (max-width: 760px) {
-  .modal-container {
-    width: 80%;
+  .modal-main {
+    display: none;
   }
 }

@@ -7,6 +7,7 @@ import Mobile from './mobileNav/Mobile';
 
 
 
+
 export const navData = [{
   name:"work",
   Path:"project"
@@ -16,8 +17,8 @@ export const navData = [{
   Path:"skill"
 },
 {
-  name:"About",
-  Path:"About"
+  name:"about",
+  Path:"about"
 },
 {
   name:"contact",
@@ -49,11 +50,13 @@ const Navbar = () => {
             const { name, Path } = data;
             return (
               <li key={index}>
-                  <a
-                  href={'#'+Path}
-        >
-          {name}
-        </a>
+       <a
+                   href={'#'+Path}
+                 
+                  >
+                  {name}
+                </a>{" "}
+          
     
               </li>
             );

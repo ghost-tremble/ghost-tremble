@@ -13,6 +13,7 @@
   font-size: medium;
   font-family: var(--font);
   font-weight: 300;
+  margin: 10px;
 
   transition: color 0.3s ease;
 }

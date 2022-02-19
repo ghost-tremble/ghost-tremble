@@ -45,13 +45,15 @@
 }
 
 .project-links span {
-  padding: 1rem 1rem 0.6rem 1rem;
-  margin: 10px;
+  margin: 10px 20px;
   cursor: pointer;
   border-bottom: 1px solid var(--prcolor);
 }
 
 @media screen and (max-width: 900px) {
+  .project-links span:nth-child(1) {
+    display: none;
+  }
   .project-container {
     flex-direction: column;
   }

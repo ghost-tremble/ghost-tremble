@@ -31,7 +31,7 @@ const About = () => {
   
     
   },[])
-  return <div className='about-section' id='About'>
+  return <div className='about-section' id="about" name="about" >
     <Header section="About me"/>
      
      <div className='section-container'>

@@ -4,8 +4,9 @@ import { TimelineLite } from 'gsap/gsap-core';
 import "../styles/projects.css"
 import { gsap } from 'gsap/all';
 import ScrollTrigger from 'gsap/ScrollTrigger';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faRaspberryPi,} from '@fortawesome/free-brands-svg-icons';
+
+import { projectData } from '../data/data';
+import ProjectT from './ProjectT';
 const Projects = React.memo(({ setModalData,setIsModalOpen}) => {
     
     gsap.registerPlugin(ScrollTrigger)
@@ -31,35 +32,13 @@ const Projects = React.memo(({ setModalData,setIsModalOpen}) => {
   return (
   <div className='project-section' name='project'  id='project'>
       <Header section="Projects"/>
-      <div className='project-container'>
-          <div className='project-image'>
-              <div>
-              <FontAwesomeIcon icon={faRaspberryPi}/>
-              </div>
-          
-          </div>
-          <div className='project-description'>
-          
-          <div className='sec'>
-          <h3 className="title">
-                Smart-notes
-            </h3>
-            <span><p> React nodejs</p></span>
-              </div>  
-            <p className="description">
-                &Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi minus fuga voluptates sint veritatis, tenetur quas quibusdam ipsa numquam aperiam minima, unde earum architecto maiores? Exercitationem ducimus iste nostrum corrupti.
-            </p>
-            <div className='project-links'>
-            <span onClick={()=>{
-                setModalData("image")
-                setIsModalOpen(true)
-                }}>Preview</span>  <span>Visit live</span>
-            <span>Github repos</span>
-            </div>
-           
-           
-          </div>
-      </div>
+     
+      {
+        projectData.map(({name,image,desc,url,repos ,preview,tech})=>{
+          return <ProjectT name={name} image={image} desc={desc}
+           setModalData={setModalData} setIsModalOpen={setIsModalOpen}  url={url} tech={tech} repos={repos} preview={preview}/>
+        })
+      }
   </div>);
 });
 

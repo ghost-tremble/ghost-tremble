@@ -9,10 +9,10 @@ const Socialicons = ({className}) => {
   return(
     <div className={className}>
     <ul>
-        <li><a href="github"><FontAwesomeIcon icon={faLinkedin} /></a></li>
-        <li><a href="linked in"><FontAwesomeIcon icon={faGithub} /></a></li>
-        <li><a href="github"><FontAwesomeIcon icon={faTwitter} /></a></li>
-        <li><a href="gmaol"><FontAwesomeIcon icon={faEnvelopeOpen} /></a></li>
+        <li><a href="https://github.com/ghost-tremble"><FontAwesomeIcon icon={faLinkedin} /></a></li>
+        <li><a href="https://www.linkedin.com/in/patrick-mary-nwakeze-372305205/"><FontAwesomeIcon icon={faGithub} /></a></li>
+        <li><a href="https://twitter.com/x9Tremble"><FontAwesomeIcon icon={faTwitter} /></a></li>
+        <li><a href="patokezy@gmail.com"><FontAwesomeIcon icon={faEnvelopeOpen} /></a></li>
         
     </ul>
         </div>

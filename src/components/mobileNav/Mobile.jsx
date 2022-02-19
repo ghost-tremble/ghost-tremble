@@ -1,5 +1,6 @@
 import React from 'react'
 import "./mobile.css"
+
 import { navData } from '../navbar'
 const Mobile = () => {
     
@@ -20,11 +21,16 @@ const Mobile = () => {
             const { name, Path } = data;
             return (
               <li key={index}>
-                  <a
-                  href={'#'+Path}
-        >
-          {name}
-        </a>
+       <a
+                   href={'#'+Path}
+                  spy={true}
+                  smooth={true}
+                  offset={-70}
+                  duration={600}
+                  >
+                  {name}
+                </a>{" "}
+          
     
               </li>
             );
