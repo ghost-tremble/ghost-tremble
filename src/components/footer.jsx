@@ -14,7 +14,7 @@ export const Footer = () => {
         
        
 
-      <p>developed by ghost-tremble</p>
+      <p>developed by Patrick</p>
      
      
     </div>

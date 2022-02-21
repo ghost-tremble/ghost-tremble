@@ -40,12 +40,12 @@ const Intro = () => {
       <div className='content'>
      
             <h2 className='text1'>
-            Hi' am <span>Patrick</span> Frontend Engineer
+            Hi  I'm <span>Patrick</span> Frontend Engineer
               </h2>
         <p className='text2'>
-        I am Frontend end user interface and experience engineer 
-      i build cool user interfaces and experience for Android and on the web 
-      Looking forward to working with you   </p>  
+        I am a Frontend end, user interface and experience engineer. 
+      I build cool user interfaces and experience for Android and on the web ,
+      Looking forward to working with you . </p>  
        
           
      

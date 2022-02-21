@@ -31,7 +31,7 @@ const ProjectT = ({name ,image ,desc,
                 })
                 setIsModalOpen(true)
                 }}>Preview</span>  <span  onClick={()=> window.open(url, "_blank")}>Visit live</span>
-            <span onClick={()=> window.open(repos, "_blank")} >Github repos</span>
+            <span onClick={()=> window.open(repos, "_blank")} >Github repo</span>
             </div>
            
            

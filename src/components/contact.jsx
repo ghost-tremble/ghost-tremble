@@ -60,7 +60,7 @@ const Contact = () => {
      <div className='section-container'>
      <div className='item1 content'>
        <h1>Hire me </h1>
-       <h3>For next projects</h3>
+       <h3>For your next projects</h3>
        <SocialIcons className="contact-list"/>
        
        </div>

@@ -65,8 +65,8 @@ export const projectData = [
   },
   {
     name: "Blogify",
-    tech: "React express nodejs mongodbAtlas",
-    url: "https://https://blogify-aes.netlify.app//",
+    tech: "React express nodejs mongodb Atlas",
+    url: "https://blogify-aes.netlify.app/",
     image: <FontAwesomeIcon icon={faBlogger} />,
     desc: "book club based app users can create books share their stories and organize book clubs all on the web built with express and mongo db  this project is not complete",
     repos: "https://github.com/ghost-tremble/blogify",

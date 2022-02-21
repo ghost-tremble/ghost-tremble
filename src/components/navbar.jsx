@@ -40,7 +40,7 @@ const Navbar = () => {
   , [])
   return <div>
       <nav className='navbar' ref={el=> nav=el}>
-          <div className='nav-header'><h3>tremble</h3>
+          <div className='nav-header'><h3>Patrick</h3>
           
           <Mobile/>
           </div>
